@@ -6,16 +6,12 @@ data = load_input(__file__)
 
 
 
-
-
 def parse_line(line):
     numbers = re.findall(r"\d", line)
     return int(numbers[0] + numbers[-1])
 
 answer1 = sum([ parse_line(l) for l in data ])
 print(f"Part 1: {answer1}")
-
-
 
 
 
